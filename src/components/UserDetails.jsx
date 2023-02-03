@@ -5,10 +5,11 @@ import { fakeUserData } from "../api";
 import { useDispatch } from "react-redux";
 import { addUser } from "../store/slices/UserSlice";
 
+
 const UserDetails = () => {
   const dispatch = useDispatch()
   const addNewUser = (user)=>{
-    console.log(user,"========");
+    console.log(user,"dispatchName");
     dispatch(addUser(user))
   }
   return (
